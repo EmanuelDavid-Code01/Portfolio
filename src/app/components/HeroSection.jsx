@@ -1,4 +1,4 @@
-// 11min
+// 15:33min
 import React from "react";
 import Image from "next/image";
 
@@ -15,7 +15,7 @@ const HeroSection = () => {
                 accusantium, hic culpa.
               </p>
               <div>
-                <button className="px-6 py-3 rounded-full mr-4">
+                <button className="px-6 py-3 rounded-full mr-4 bg-white hover:bg-slate-200 text-black">
                     Sobre mi
                 </button>
                 <button className="px-6 py-3 rounded-full">
