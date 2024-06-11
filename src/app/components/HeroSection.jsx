@@ -15,7 +15,7 @@ const HeroSection = () => {
                 accusantium, hic culpa.
               </p>
           </div>
-              <div>
+              <div className="grid grid-cols-1 lg:grid-cols-12">
                 <button className="px-6 py-3 rounded-full mr-4 bg-white hover:bg-slate-200 text-black">
                     Sobre mi
                 </button>
