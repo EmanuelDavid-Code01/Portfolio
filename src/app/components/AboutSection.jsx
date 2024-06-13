@@ -8,7 +8,7 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul>
+      <ul className="list-disc pl-2">
         <li>Node.js</li>
         <li>Express</li>
         <li>JavaScript</li>
@@ -20,7 +20,7 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content: (
-      <ul>
+      <ul className="list-disc pl-2">
         <li>CoderHouse</li>
         <li>Udemy</li>
         <li>Profesorado Consudec</li>
@@ -31,7 +31,7 @@ const TAB_DATA = [
     title: "Certifications",
     id: "certifications",
     content: (
-      <ul>
+      <ul className="list-disc pl-2">
         <li>Full stack Developer</li>
         <li>UX/UI Designer</li>
         <li>Profesor informatica</li>
