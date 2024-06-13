@@ -3,6 +3,43 @@ import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
 
+const TAB_DATA = [
+  {
+    title: "Skills",
+    id: "skills",
+    content: (
+      <ul>
+        <li>Node.js</li>
+        <li>Express</li>
+        <li>JavaScript</li>
+        <li>React</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Education",
+    id: "education",
+    content: (
+      <ul>
+        <li>CoderHouse</li>
+        <li>Udemy</li>
+        <li>Profesorado Consudec</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Certifications",
+    id: "certifications",
+    content: (
+      <ul>
+        <li>Full stack Developer</li>
+        <li>UX/UI Designer</li>
+        <li>Profesor informatica</li>
+      </ul>
+    ),
+  },
+];
+
 const AboutSection = () => {
   const [tab, setTab] = useState("skills");
   const [isPending, startTransition] = useTransition();
@@ -21,7 +58,7 @@ const AboutSection = () => {
           height={500}
           alt="About Image"
         />
-        <div>
+        <div className="mt-4 md:mt-0 text-left flex flex-col h-full ">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base md:text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, nam
@@ -29,7 +66,7 @@ const AboutSection = () => {
             temporibus delectus placeat, animi dolore expedita incidunt nihil
             sapiente necessitatibus harum?
           </p>
-          <div className="flex flex-row mt-8">
+          <div className="flex flex-row justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
@@ -37,7 +74,7 @@ const AboutSection = () => {
               {" "}
               Skills{" "}
             </TabButton>
-            
+
             <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
@@ -54,6 +91,7 @@ const AboutSection = () => {
               Certifications{" "}
             </TabButton>
           </div>
+          <div className="mt-8">{TAB_DATA.find((t)=> t.id === tab).content}</div>
         </div>
       </div>
     </section>
