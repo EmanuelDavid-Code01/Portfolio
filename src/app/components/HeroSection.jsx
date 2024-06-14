@@ -5,6 +5,8 @@ import Image from "next/image";
 // incio de import de animaciones
 import { TypeAnimation } from "react-type-animation";
 // final del import de animaciones npm anteriormente instaladas
+
+
 const HeroSection = () => {
   return (
     <section>
@@ -62,6 +64,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+      
     </section>
   );
 };
