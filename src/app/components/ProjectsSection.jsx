@@ -8,6 +8,8 @@ const projectsData = [
     description: "Descripcion 1",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
+    gitUrl: "/",
+    previewUrl: "/",
   },
   {
     id: 2,
@@ -15,6 +17,8 @@ const projectsData = [
     description: "Descripcion 2",
     image: "/images/projects/2.png",
     tag: ["All", "Web"],
+    gitUrl: "/",
+    previewUrl: "/",
   },
   {
     id: 3,
@@ -22,20 +26,15 @@ const projectsData = [
     description: "Descripcion 3",
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
+    gitUrl: "/",
+    previewUrl: "/",
   },
-  //   {
-  //     id: 4,
-  //     title: "React Portfolio Website",
-  //     description: "Descripcion 4",
-  //     image: "images/projects/1.png",
-  //     tag: ["All", "Web"],
-  //   },
 ];
 
 const ProjectsSection = () => {
   return (
     <>
-      <h2 className="text-center text-4xl font-bold text-white mt-4">
+      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-4">
         My Projects
       </h2>
       <div className="grid md:grid-cols-3 gap-8 md:gap-12">
@@ -45,7 +44,9 @@ const ProjectsSection = () => {
             title={project.title}
             description={project.description}
             imgUrl={project.image}
-            tag={project}
+            // tag={project}
+            gitUrl={project.gitUrl}
+            previewUrl={project.previewUrl}
           />
         ))}
       </div>
