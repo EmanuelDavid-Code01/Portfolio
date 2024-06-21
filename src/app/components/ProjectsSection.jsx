@@ -9,7 +9,7 @@ const projectsData = [
     title: "React Portfolio Website",
     description: "Descripcion 1",
     image: "/images/projects/1.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Web","Mobile"],
     gitUrl: "/",
     previewUrl: "/",
   },
@@ -31,6 +31,15 @@ const projectsData = [
     gitUrl: "/",
     previewUrl: "/",
   },
+  {
+    id: 4,
+    title: "React Portfolio Website",
+    description: "Descripcion 4",
+    image: "/images/projects/3.png",
+    tag: ["All","Mobile"],
+    gitUrl: "/",
+    previewUrl: "/",
+  }
 ];
 
 const ProjectsSection = () => {
@@ -39,6 +48,10 @@ const ProjectsSection = () => {
   const handleTagChange = (newTag) => {
     setTag(newTag);
   };
+
+  const filteredProjects = projectsData.filter((project) =>
+    project.tag.includes(tag)
+  );
   return (
     <>
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-4">
@@ -62,7 +75,7 @@ const ProjectsSection = () => {
         />
       </div>
       <div className="grid md:grid-cols-3 gap-8 md:gap-12 py-1">
-        {projectsData.map((project) => (
+        {filteredProjects.map((project) => (
           <ProjectCard
             key={project.id}
             title={project.title}
