@@ -1,11 +1,10 @@
-// email.transport.js
-import mailgun from 'mailgun-js';
+import { emailjs } from 'emailjs-com';
 
-const mailgunClient = mailgun({
-  apiKey: process.env.MAILGUN_API_KEY,
-  domain: process.env.MAILGUN_DOMAIN,
-});
+const serviceId = 'ervice_l5ezkhn';
+const templateId = '__ejs-test-mail-service__';
+const publicKey = 'rJFfZ-rgSWocVCc62';
+const privateKey = 'CDbZxR954THTnDT11_bM4';
 
-export default mailgunClient;
+const transporter = emailjs.init(publicKey);
 
-
+export default transporter;
