@@ -1,14 +1,11 @@
 // email.transport.js
-const nodemailer = require('nodemailer');
+import mailgun from 'mailgun-js';
 
-const transporter = nodemailer.createTransport({
-  host: 'smtp.gmail.com',
-  port: 587,
-  secure: false, // or 'STARTTLS'
-  auth: {
-    user: 'mobile20ema@gmail.com',
-    pass: 'sral qihh sjjq ujqg'
-  }
+const mailgunClient = mailgun({
+  apiKey: process.env.MAILGUN_API_KEY,
+  domain: process.env.MAILGUN_DOMAIN,
 });
 
-module.exports = transporter;
+export default mailgunClient;
+
+

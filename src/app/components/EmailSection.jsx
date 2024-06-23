@@ -1,6 +1,6 @@
 'use client';
-import React, { useState } from 'react';
-import transporter from '../../../email.transport';
+import React, { useState } from 'eact';
+import mailgun from '../../../email.transport';
 
 const EmailSection = () => {
   const [name, setName] = useState('');
@@ -9,13 +9,13 @@ const EmailSection = () => {
 
   const handleSendEmail = () => {
     const mailOptions = {
-      from: 'mobile20ema@gmail.com',
-      to: 'mobile20ema@gmail.com',
+      from: 'obile20ema@gmail.com',
+      to: 'obile20ema@gmail.com',
       subject: 'Nuevo mensaje de contacto',
       text: `Nombre: ${name}\nEmail: ${email}\nMensaje: ${message}`
     };
 
-    transporter.sendMail(mailOptions, (error, info) => {
+    mailgun.messages().send(mailOptions, (error, body) => {
       if (error) {
         console.log(error);
       } else {
