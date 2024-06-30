@@ -1,10 +1,11 @@
-import { emailjs } from 'emailjs-com';
+// email.transport.js
+import emailjs from '@emailjs/browser';
 
-const serviceId = 'ervice_l5ezkhn';
-const templateId = '__ejs-test-mail-service__';
-const publicKey = 'rJFfZ-rgSWocVCc62';
-const privateKey = 'CDbZxR954THTnDT11_bM4';
+const serviceId = 'service_q17osgq';
+const templateId = 'template_eiee83a';
+const publicKey = 'eyMDoICMhEhXYr9_e';
+const privateKey = 'Qprk1UGEjryCZLvpET5NE';
 
-const transporter = emailjs.init(publicKey);
+emailjs.init(publicKey);
 
-export default transporter;
+export { serviceId, templateId, emailjs };

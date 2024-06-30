@@ -6,7 +6,6 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 // final del import de animaciones npm anteriormente instaladas
 
-
 const HeroSection = () => {
   return (
     <section>
@@ -57,14 +56,14 @@ const HeroSection = () => {
             <Image
               src="/images/hero-image.png"
               alt="hero image"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              className="w-auto h-48 absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={300}
               height={300}
+              priority
             />
           </div>
         </div>
       </div>
-      
     </section>
   );
 };
