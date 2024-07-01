@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { emailjs, serviceId, templateId } from "../../../email.transport";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
+import InstagramIcon from "../../../public/instagram-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -48,25 +49,30 @@ const EmailSection = () => {
 
   return (
     <section
-      className={`md:grid gap-4 max-w-md mx-auto p-4 bg-white rounded-lg shadow-md flex flex-col items-center mt-48 `}
+      className={`grid md:grid-cols-2 gap-4 p-4 rounded-lg shadow-md flex-col items-center mt-48 relative`}
     >
-      <h5 className="text-xl font-bold text-gray-700 text-center mb-4">
-        Contactame
-      </h5>
-      <p className="text-black mb-1 max-w-md">
-        Por cualquier consulta escribime.
-      </p>
-      <div className="socials flex flex-row gap-2">
-        <Link href= "github.com">
-        <Image src={GithubIcon} alt="Github Icon"/>
-        </Link>
-        <Link href="linkedin.com">
-        <Image src={LinkedinIcon} alt="Linkedin Icon"/>
-        </Link>
+      <div className="bg-gradient-radial from-blue-900 to-transparent rounded-full h-80 w-80 blur-lg absolute top-1/4 -left-4 transform -translate-x-1/2 z-1"></div>
+      <div className="md:w-1/2 md:text-left h-full relative">
+        <h5 className="text-xl font-bold text-white mb-4">Contactame</h5>
+        <p className="text-gray-500 mb-1 max-w-md">
+          ¿Necesitás asesoramiento u orientación? Envíame un mensaje y estaré
+          encantado de ayudarte.
+        </p>
+        <div className="flex flex-row gap-x-4 md:gap-x-2 py-2 justify-start">
+          <Link href="https://github.com/EmanuelDavid-Code01">
+            <Image src={GithubIcon} alt="Github Icon" />
+          </Link>
+          <Link href="https://www.linkedin.com/in/emanuel-david-garcia-b73346215/">
+            <Image src={LinkedinIcon} alt="Linkedin Icon" />
+          </Link>
+          <Link href="https://www.instagram.com/codewizart/">
+            <Image src={InstagramIcon} alt="Instagram Icon" />
+          </Link>
+        </div>
       </div>
       <form onSubmit={handleSendEmail} className="space-y-4 w-full md:w-auto">
         <div className="flex flex-col">
-          <label htmlFor="name" className="text-gray-700 py-2">
+          <label htmlFor="name" className="text-white py-2">
             Nombre:
           </label>
           <input
@@ -75,11 +81,12 @@ const EmailSection = () => {
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
+            placeholder="Escribe tu nombre."
             className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-indigo-200 text-black"
           />
         </div>
         <div className="flex flex-col">
-          <label htmlFor="email" className="text-gray-700 py-2">
+          <label htmlFor="email" className="text-white py-2">
             Correo electrónico:
           </label>
           <input
@@ -88,11 +95,12 @@ const EmailSection = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
+            placeholder="Escribe tu email."
             className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-indigo-200 text-black"
           />
         </div>
         <div className="flex flex-col">
-          <label htmlFor="message" className="text-gray-700 py-2">
+          <label htmlFor="message" className="text-white py-2">
             Mensaje:
           </label>
           <textarea
@@ -100,13 +108,14 @@ const EmailSection = () => {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
+            placeholder="Escribe tu consulta."
             className="w-full px-3 py-3 border rounded-lg focus:outline-none focus:ring focus:ring-indigo-200 text-black"
           />
         </div>
         <button
           type="submit"
           disabled={sending}
-          className={`w-full md:w-auto bg-[#3a55b4] text-white px-4 py-2 rounded-lg hover:bg-[#2395f2] focus:outline-none focus:ring focus:ring-indigo-200 ${
+          className={`w-full bg-[#3a55b4] text-white px-4 py-2 rounded-lg hover:bg-[#2395f2] focus:outline-none focus:ring focus:ring-indigo-200 ${
             sending ? "opacity-50 cursor-not-allowed" : ""
           }`}
         >

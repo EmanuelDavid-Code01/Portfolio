@@ -1,6 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="24" cy="24" r="20" fill="#0077B5"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M18.7747 14.2839C18.7747 15.529 17.8267 16.5366 16.3442 16.5366C14.9194 16.5366 13.9713 15.529 14.0007 14.2839C13.9713 12.9783 14.9193 12 16.3726 12C17.8267 12 18.7463 12.9783 18.7747 14.2839ZM14.1199 32.8191V18.3162H18.6271V32.8181H14.1199V32.8191Z" fill="white"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M22.2393 22.9446C22.2393 21.1357 22.1797 19.5935 22.1201 18.3182H26.0351L26.2432 20.305H26.3322C26.9254 19.3854 28.4079 17.9927 30.8101 17.9927C33.7752 17.9927 35.9995 19.9502 35.9995 24.219V32.821H31.4922V24.7838C31.4922 22.9144 30.8404 21.6399 29.2093 21.6399C27.9633 21.6399 27.2224 22.4999 26.9263 23.3297C26.8071 23.6268 26.7484 24.0412 26.7484 24.4574V32.821H22.2411V22.9446H22.2393Z" fill="white"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FCFCFC;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#020202;}
+</style>
+<ellipse class="st0" cx="400.3" cy="401.1" rx="384.8" ry="375.8"/>
+<path class="st1" d="M312.9,238.1c0,20.8-15.8,37.5-40.5,37.5c-23.7,0-39.5-16.8-39.1-37.5c-0.5-21.8,15.3-38.1,39.5-38.1
+	C297.1,200,312.4,216.3,312.9,238.1z M235.3,547V305.3h75.1V547H235.3L235.3,547z"/>
+<path class="st1" d="M370.7,382.4c0-30.1-1-55.9-2-77.1H434l3.5,33.1h1.5c9.9-15.3,34.6-38.5,74.6-38.5c49.4,0,86.5,32.6,86.5,103.8
+	V547H525V413c0-31.2-10.9-52.4-38-52.4c-20.8,0-33.1,14.3-38,28.2c-2,5-3,11.9-3,18.8V547h-75.1L370.7,382.4L370.7,382.4z"/>
 </svg>
