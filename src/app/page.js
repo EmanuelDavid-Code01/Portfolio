@@ -5,6 +5,7 @@ import AboutSection from "./components/AboutSection";
 import { Container } from "postcss";
 import ProjectsSection from "./components/ProjectsSection";
 import EmailSection from "./components/EmailSection";
+import Footer from "./components/Footer";
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
         <AboutSection/>
         <ProjectsSection/>
         <EmailSection/>
+        <Footer/>
       </div>
     </main>
   );
