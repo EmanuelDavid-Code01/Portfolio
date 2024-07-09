@@ -6,6 +6,7 @@ import { Container } from "postcss";
 import ProjectsSection from "./components/ProjectsSection";
 import EmailSection from "./components/EmailSection";
 import Footer from "./components/Footer";
+import AchievementsSection from "./components/AchievementsSection";
 
 
 export default function Home() {
@@ -14,11 +15,12 @@ export default function Home() {
       <Navbar />
       <div className="container mt-24 mx-auto px-12 py-4">
         <HeroSection />
+        <AchievementsSection/>
         <AboutSection/>
         <ProjectsSection/>
         <EmailSection/>
-        <Footer/>
       </div>
+        <Footer/>
     </main>
   );
 }

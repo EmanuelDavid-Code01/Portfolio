@@ -8,11 +8,11 @@ import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
   return (
-    <section>
+    <section className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <div className="col-span-7 place-self-center text-center sm:text-left">
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3a55b4] via-[#1dcffd] to-[#45fce1]">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3a55b4] via-[#1dcffd] to-[#45fce1] lg:text-7xl">
               Hola, Soy {""}
             </span>
             <br />
