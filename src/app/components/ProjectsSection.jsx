@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState,useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 
@@ -54,7 +54,7 @@ const ProjectsSection = () => {
   );
   return (
     <>
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-4">
+      <h2 id="Proyectos" className="text-center text-4xl font-bold text-white mt-4 mb-4">
         My Projects
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">

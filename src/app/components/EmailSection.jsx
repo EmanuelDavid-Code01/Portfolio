@@ -53,7 +53,7 @@ const EmailSection = () => {
     >
       <div className="bg-gradient-radial from-blue-900 to-transparent rounded-full h-80 w-80 blur-lg absolute top-1/4 -left-4 transform -translate-x-1/2 z-1 top"></div>
       <div className="md:w-1/2 md:text-left h-full relative">
-        <h5 className="text-xl font-bold text-white mb-4">Contactame</h5>
+        <h5 id="Contactame" className="text-xl font-bold text-white mb-4">Contactame</h5>
         <p className="text-gray-500 mb-1 max-w-md">
           ¿Necesitás asesoramiento u orientación? Envíame un mensaje y estaré
           encantado de ayudarte.
