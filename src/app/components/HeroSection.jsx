@@ -50,9 +50,9 @@ const HeroSection = () => {
           </p>
           {/* Botones dentro del div 2cundario */}
           <div>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#3a55b4] via-[#1dcffd] to-[#45fce1] hover:bg-slate-200 text-white">
+            {/* <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#3a55b4] via-[#1dcffd] to-[#45fce1] hover:bg-slate-200 text-white">
               Sobre mi
-            </button>
+            </button> */}
             <a href={downloadLink} download>
             <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#3a55b4] via-[#1dcffd] to-[#45fce1] hover:bg-slate-800 text-white mt-3">
               <span className="block bg-[#121212] rounded-full px-5 py-2 hover:bg-salte-800  ">
