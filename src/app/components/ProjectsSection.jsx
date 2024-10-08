@@ -1,49 +1,54 @@
 "use client";
-import React, { useState,useRef } from "react";
+import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Descripcion 1",
+    title: "Tienda de Zapatillas",
+    description:
+      "E-commerce Basico donde vas a poder seleccionar y agregar a tu carrito lo que estes buscando. Tambien podemos hacerlo desde el celular.",
     image: "/images/projects/1.png",
-    tag: ["All", "Web","Mobile"],
-    gitUrl: "/",
+    tag: ["Todos", "Web"],
+    gitUrl: "https://github.com/EmanuelDavid-Code01/App-Note-Ema",
     previewUrl: "/",
   },
   {
     id: 2,
-    title: "React Portfolio Website",
-    description: "Descripcion 2",
+    title: "Panaderia",
+    description:
+      "Proyecto en el cual usamos, Node.js,npm (Node Package Manager) para administrar dependencias y scripts, Sass y Nodemon. ",
     image: "/images/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    tag: ["Todos", "Web"],
+    gitUrl:
+      "https://github.com/EmanuelDavid-Code01/LaPanaderia-DesafioFinalCoderHouse",
     previewUrl: "/",
   },
   {
     id: 3,
-    title: "React Portfolio Website",
-    description: "Descripcion 3",
+    title: "Juego de mecanografia",
+    description:
+      "juego ideado para mejorar la velocidad de tipeo, habilitado para jugar por browsers preferentemente google chrome. A desafiar los limites",
     image: "/images/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    tag: ["Todos", "Web"],
+    gitUrl: "https://github.com/EmanuelDavid-Code01/MecaPharsh",
     previewUrl: "/",
   },
   {
     id: 4,
-    title: "React Portfolio Website",
-    description: "Descripcion 4",
-    image: "/images/projects/3.png",
-    tag: ["All","Mobile"],
-    gitUrl: "/",
+    title: "Tienda de ropa",
+    description:
+      "En esta opotunidad estamos viendo una tienda de ropa que cuenta con un catalogo y la misma se adapta a diferentes tamaños, es responsive.",
+    image: "/images/projects/4.png",
+    tag: ["Todos", "Responsive"],
+    gitUrl: "https://github.com/EmanuelDavid-Code01/LaTiendaDeEmaGood",
     previewUrl: "/",
-  }
+  },
 ];
 
 const ProjectsSection = () => {
-  const [tag, setTag] = useState("All");
+  const [tag, setTag] = useState("Todos");
 
   const handleTagChange = (newTag) => {
     setTag(newTag);
@@ -54,14 +59,17 @@ const ProjectsSection = () => {
   );
   return (
     <>
-      <h2 id="Proyectos" className="text-center text-4xl font-bold text-white mt-4 mb-4">
+      <h2
+        id="Proyectos"
+        className="text-center text-4xl font-bold text-white mt-4 mb-4"
+      >
         Mis proyectos
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
           onClick={handleTagChange}
-          name="All"
-          isSelected={tag === "All"}
+          name="Todos"
+          isSelected={tag === "Todos"}
         />
         <ProjectTag
           onClick={handleTagChange}
@@ -70,8 +78,8 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="Responsive"
+          isSelected={tag === "Responsive"}
         />
       </div>
       <div className="grid md:grid-cols-3 gap-8 md:gap-12 py-1">
@@ -81,7 +89,7 @@ const ProjectsSection = () => {
             title={project.title}
             description={project.description}
             imgUrl={project.image}
-            // tag={project}
+            tag={project}
             gitUrl={project.gitUrl}
             previewUrl={project.previewUrl}
           />

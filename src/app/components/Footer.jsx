@@ -16,7 +16,7 @@ const Footer = () => {
         </span>
       </div>
       <div className="justify-between container p-3 text-right">
-        <p className="text-slate-600">All rights reserved.</p>
+        <p className="text-slate-600">Whatsapp<br className="block" /> 11-23410988</p>
       </div>
     </footer>
   );
